@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+<script>
+  liff.init({
+    liffId: "https://liff.line.me/2007941899-ZnNUNu4I"
+  }).then(() => {
+    liff.openWindow({
+      url: "https://amco.co.jp/medical/library/gastrointestinal-endoscopy",
+      external: true
+    });
+  }).catch(err => {
+    console.error(err);
+  });
+</script>
+</body>
+</html>
